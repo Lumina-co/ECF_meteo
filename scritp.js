@@ -1,23 +1,19 @@
 document.getElementById("open").onclick = function(){ 
-// lorsque l'élément id est cliqué  une fonction est éxécutée
-
-     document.getElementById("info").classList.toggle("hidden");
-     document.getElementById("info").classList.toggle("");
-// cette fonction utilise la méthode classlist.toogle pour ajouter ou supprimer la class hidden
-
-      // document.getElementById("open").classList.toggle("hidden");
-      // ensuite la même method est utilisée pour ajouté
- 
+   // lorsque l'élément id est cliqué  une fonction est éxécutée
+   document.getElementById("info").classList.toggle("hidden");
+   document.getElementById("info").classList.remove("animate__slideOutDown");
+   document.getElementById("info").classList.add("animate__slideInUp");
 };
 
-document.getElementById("fleche").onclick = function(){
+document.getElementById("fleche").onclick = function()
+{
+   document.getElementById("info").classList.remove("animate__slideInUp");
+   document.getElementById("info").classList.add("animate__slideOutDown");
 
-   document.getElementById("info").classList.toggle("hidden");
-   document.getElementById("info").classList.toggle("");
-    
-
-//   document.getElementById("open").classList.toggle("hidden");
-
+   // au bout de 500ms on ajoute la class hidden à notre élément info
+   window.setTimeout(function() {
+      document.getElementById("info").classList.toggle("hidden");
+   }, 500);
 };
 
 document.getElementById("heart").onclick = function(){
