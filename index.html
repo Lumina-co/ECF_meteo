@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link
-        href="https://fonts.bunny.net/css?family=abeezee:400|abhaya-libre:800|montserrat:400|poppins:100,200,300,400,500,600,700,800,900"
+
+    <link href="https://fonts.bunny.net/css?family=abeezee:400|abhaya-libre:800|montserrat:400|poppins:100,200,300,400,500,600,700,800,900"
         rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Application Météo</title>
 </head>
 
@@ -204,11 +206,11 @@
 
         <!-- PAGE INFORMATION qui est ajoutée avec une classlist toogle -->
         <div id="info"
-            class="hidden absolute bg-black top-0 backdrop-blur-xl z-50 bg-gray-100 bg-opacity-20  duration-300 ease-in-out">
+            class="hidden absolute animate__animated animate__slideInUp bg-black top-0 backdrop-blur-xl z-50 bg-gray-100 bg-opacity-20  duration-300 ease-in-out">
 
-            <div class="flex ">
-                <div class="flex absolute  p-8 w-full  lg:mx-auto ">
-                    <svg id="fleche" xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 16 24"
+            <div class="flex">
+                <div class="flex absolute   p-8 w-full  lg:mx-auto ">
+                    <svg id="fleche" class="" xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 16 24"
                         fill="none">
                         <g clip-path="url(#clip0_24_199)">
                             <path
@@ -267,7 +269,7 @@
                     Wikipédia</a>
 
                 <div class="flex-col lg:m-8 p-8 ">
-                    <div class="flex items-center gap-4 justify-center p-4">
+                    <div class="flex  items-center gap-4 justify-center p-4">
                         <img class="lg:w-1/5" src="assets/image 2 (1).svg" alt="image_besançon">
                         <img class="lg:w-1/5" src="assets/image 3.svg" alt="image_besançon">
                     </div>
